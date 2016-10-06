@@ -1,11 +1,14 @@
 body{
   background:#F44336;
+  width:100vw;
+  height:100vh;
+  margin:0px;
 }
 .tower {
   position:absolute;
   left:50%;
   top:50%;
-  margin-left:-25px;
+  margin-left:-12px;
   margin-top:-200px;
   width:25px;
   height:400px;
@@ -172,4 +175,10 @@ h1{
   bottom:100px;
   color:#FF9800;
   font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 768px){
+  .tower {
+    transform:scale(.5);
+  }
 }
